@@ -15,6 +15,11 @@ export default {
             bookTitle: '',
             bookAuthor: ''
         };
+    },
+    methods: {
+        bookSubmit(bookTitle, bookAuthor) {
+            this.$emit('addBook', bookTitle, bookAuthor);
+        }
     }
 }
 </script>
